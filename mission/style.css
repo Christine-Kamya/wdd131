@@ -1,0 +1,78 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.5; /* Increase line-height for better readability */
+    text-align: center; /* Center content inside containers */
+    color: #000; /* Default text color */
+  }
+  
+  .mission-statement-container {
+    max-width: 600px; /* Limit content width */
+    margin: 20px auto; /* Center the box on the page */
+    padding: 20px;
+    border: 2px solid #ccc; /* Optional border to match mockup */
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Slight background color for contrast */
+  }
+  
+  /* Header Styling */
+  .site-header {
+    margin-bottom: 20px;
+  }
+  
+  .mission-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px; /* Adjust letter-spacing for title */
+    text-transform: uppercase; /* Make the title all caps */
+    margin-bottom: 10px;
+  }
+  
+  .mission-subtitle {
+    font-size: 1.75rem;
+    color: #006EB6; /* Subtitle color */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+  
+  /* Main Content */
+  main {
+    margin-bottom: 20px; /* Space between main content and footer */
+  }
+  
+  .mission-text {
+    text-align: left; /* Left-align paragraphs */
+    margin-bottom: 15px;
+    line-height: 1.5; /* Increase line-height */
+  }
+  
+  .mission-list {
+    text-align: left; /* Left-align the list */
+    list-style-type: disc; /* Add bullets to the list */
+    margin: 20px auto; /* Space between paragraphs */
+    padding-left: 20px; /* Indent the list */
+  }
+  
+  .mission-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer with Logo */
+  .site-footer {
+    margin-top: 20px;
+  }
+  
+  .mission-logo {
+    max-width: 150px; /* Resize the logo */
+    display: block;
+    margin: 0 auto; /* Center the logo */
+  }
+  
