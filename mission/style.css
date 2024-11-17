@@ -1,0 +1,108 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.5; /* Increase line-height for better readability */
+    text-align: center; /* Center content inside containers */
+
+  }
+  /* Dark Theme - Lighter Blue for H2 */
+body.dark h2 {
+  color: #80D0FF; /* Lighter blue color for better contrast */
+}
+
+  .content {
+    max-width: 600px; /* Limit content width */
+    margin: 20px auto; /* Center the box on the page */
+    padding: 20px;
+    border: 2px solid #ccc; /* Optional border to match mockup */
+    border-radius: 10px;
+   /* Slight background color for contrast */
+  }
+  
+  body.dark .mission-statement-container {
+    background-color: #1f1f1f; /* Dark background for the container */
+    border-color: #333; /* Darker border color */
+  }
+
+  /* Header Styling */
+  .site-header {
+    margin-bottom: 20px;
+  }
+  
+  .mission-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px; /* Adjust letter-spacing for title */
+    text-transform: uppercase; /* Make the title all caps */
+    margin-bottom: 10px;
+  }
+  
+  .mission-subtitle {
+    font-size: 1.75rem;
+    color: #006EB6; /* Subtitle color */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+
+  body.dark .mission-subtitle {
+    color: #80d0ff; /* Lighter blue for dark theme */
+  }
+  body.dark img{
+    content:url("byui-logo_dark.png");
+  }
+  /* Main Content */
+  main {
+    margin-bottom: 20px; /* Space between main content and footer */
+  }
+  
+  .mission-text {
+    text-align: left; /* Left-align paragraphs */
+    margin-bottom: 15px;
+    line-height: 1.5; /* Increase line-height */
+  }
+  
+  .mission-list {
+    text-align: left; /* Left-align the list */
+    list-style-type: disc; /* Add bullets to the list */
+    margin: 20px auto; /* Space between paragraphs */
+    padding-left: 20px; /* Indent the list */
+  }
+  
+  .mission-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer with Logo */
+  .site-footer {
+    margin-top: 20px;
+  }
+  
+  .mission-logo {
+    max-width: 150px; /* Resize the logo */
+    display: block;
+    margin: 0 auto; /* Center the logo */
+  }
+  
+  /* Dark Theme Footer and Logo */
+body.dark .site-footer {
+  background-color: #1f1f1f;
+}
+body.dark .mission-logo {
+    filter: brightness(0.8); /* Dim the logo in dark mode if needed */
+}
+
+img{
+  width:50%;
+}
+.dark{
+  background-color: #333;
+  color:white;
+}
