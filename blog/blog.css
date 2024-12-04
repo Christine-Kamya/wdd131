@@ -1,0 +1,98 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFC69B; /* Light gold background */
+    color: #473144; /* Dark text color */
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #AF1B3F; /* Red background for header */
+    position: relative; /* Set position for absolute child elements */
+}
+
+h1 {
+    font-size: 2.5em; /* Increase title size */
+    margin: 0;
+    padding-bottom: 10px; /* Padding below title */
+}
+
+nav {
+    position: absolute; /* Position navigation absolutely */
+    right: 0; /* Align to the right */
+    top: 20px; /* Align vertically within the header */
+}
+
+nav ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 20px; /* Space between links */
+}
+
+nav ul li {
+    margin: 0; /* Remove margin for list items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+    font-size: 1.2em; /* Increase font size for links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.skiptocontent {
+    position: absolute; /* Set to absolute positioning */
+    top: -40px; /* Move it off-screen */
+    left: 0; /* Align to the left edge of the screen */
+    background-color: #AF1B3F; /* Red background for visibility */
+    color: white; /* White text color for contrast */
+    padding: 10px; /* Add some padding */
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: top 0.3s; /* Smooth transition */
+}
+
+.skiptocontent a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.skiptocontent a:focus {
+    top: 0; /* Move back on-screen when focused */
+}
+
+main {
+    display: grid; /* Use grid for the main content */
+    grid-template-columns: 3fr 1fr; /* Main content on the left, filter box on the right */
+    padding: 20px; /* Add padding */
+}
+
+.articles {
+    display: grid; /* Use grid for articles */
+    grid-gap: 20px; /* Space between articles */
+}
+
+article {
+    display: grid; /* Use grid for article layout */
+    grid-template-columns: 2fr 1fr; /* Details on the left, title, image, and description on the right */
+    background-color: #FFFFFF; /* White background for articles */
+    border: 1px solid #473144; /* Dark border for articles */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside articles */
+}
+
+.article-details {
+    padding-right: 10px; /* Space between details and description */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #AF1B3F; /* Red background for footer */
+    color: white; /* White text color for footer */
+}

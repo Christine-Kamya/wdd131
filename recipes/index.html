@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Random Recipe Generator with Search and Filter Functionality">
+  <meta name="author" content="Christine Kamya">
+  <title>Recipe Generator</title>
+  <link rel="stylesheet" href="recipes.css">
+  <script src="main.js" type="module" defer></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Random Recipe Generator</h1>
+    <!-- Search Form -->
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Search recipes..." aria-label="Search recipes">
+      <button id="searchButton" type="button">Search</button>
+    </form>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Random Recipe Section -->
+    <section id="random-recipe">
+      <h2>Today's Random Recipe</h2>
+      <article id="featured-recipe">
+        <!-- This will dynamically load a random recipe -->
+      </article>
+    </section>
+
+    <!-- All Recipes Section -->
+    <section id="recipes-list">
+      <h2>All Recipes</h2>
+      <div id="recipes">
+        <!-- Dynamically rendered recipes will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Random Recipe Generator by Christine Kamya</p>
+  </footer>
+</body>
+</html>

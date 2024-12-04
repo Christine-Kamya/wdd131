@@ -96,7 +96,7 @@ header h1 {
 }
 
 .recipe img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -155,6 +155,7 @@ footer .social img:hover {
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+
     }
 
     .recipe {
@@ -164,6 +165,16 @@ footer .social img:hover {
 
     .recipe .description {
         display: block; 
+        
+    }
+    
+    .recipe-container {
+        display :flex;
+        flex-direction: row;
+    }
+    
+    .recipe img{
+        width: 400px;
     }
 }
 
