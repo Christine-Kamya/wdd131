@@ -1,7 +1,7 @@
 // main.js
-import { recipes } from './recipes.mjs';
+// import { recipes } from './recipes.mjs';
 
-console.log(recipes);  // This will display the list of recipes in the console
+// console.log(recipes);  // This will display the list of recipes in the console
 import recipes from './recipes.mjs';
 
 
@@ -21,7 +21,6 @@ function tagsTemplate(tags) {
     return tags.map(tag => `<li>${tag}</li>`).join('');
 }
 
-/
 function ratingTemplate(rating) {
     let html = `<span class="rating" role="img" aria-label="Rating: ${rating} out of 5 stars">`;
     for (let i = 0; i < 5; i++) {
@@ -33,19 +32,21 @@ function ratingTemplate(rating) {
 
 
 function recipeTemplate(recipe) {
-    return `<figure class="recipe">
-        <img src="${recipe.image}" alt="Image of ${recipe.name}" />
-        <figcaption>
-            <ul class="recipe__tags">
-                ${tagsTemplate(recipe.tags)}
-            </ul>
-            <h2><a href="#">${recipe.name}</a></h2>
-            <p class="recipe__ratings">
-                ${ratingTemplate(recipe.rating)}
-            </p>
-            <p class="recipe__description">${recipe.description}</p>
-        </figcaption>
-    </figure>`;
+    return `<article class="recipe">
+        <h2>${recipe.name}</h2>
+        <div class="recipe-container">
+            <img src="${recipe.image}" alt="Image of ${recipe.name}" />
+             <div class="recipe-content">
+                <ul class="recipe__tags">
+                    ${tagsTemplate(recipe.tags)}
+                </ul>
+                <p class="description">${recipe.description}</p>
+                <p class="recipe__ratings">
+                    ${ratingTemplate(recipe.rating)}
+                </p>
+            </div>
+        </div>
+    </article>`;
 }
 
 
@@ -74,11 +75,13 @@ function searchHandler(e) {
     e.preventDefault();
     const query = document.getElementById('searchInput').value.toLowerCase();
     const filteredRecipes = filterRecipes(query);
-    renderRecipes(filteredRecipes);
+    const randomRecipe = getRandomListEntry(filteredRecipes)
+    renderRecipes([randomRecipe]);
+    
 }
 
 
-document.getElementById('searchForm').addEventListener('submit', searchHandler);
+document.querySelector('.search-form').addEventListener('submit', searchHandler);
 
 
 init();

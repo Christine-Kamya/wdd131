@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://example.com/recipes">
     <meta name="twitter:card" content="summary_large_image">
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="main.js" defer></script>
 
     <link rel="stylesheet" href="recipes.css">
 
@@ -31,52 +31,14 @@
     <main>
       
         <form class="search-form" action="#" method="GET">
-            <input type="text" name="search" placeholder="Find a recipe" required>
+            <input type="text"  id="searchInput" name="search" placeholder="Find a recipe" required>
             <button type="submit">Search</button>
         </form>
  
         <section id="recipe-container" class="recipes"></section>
        
-        <article class="recipe">
-            <article class="recipe">
-                <h2>APPLE CRISP</h2>
 
-                
-                <div class="recipe-container">
-                    <img src="images/apple-crisp.jpg" alt="dessert">
-                    <div class="recipe-content">
-                        
-                        <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla icecream.</p>
-                        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star-empty">☆</span>
-                        </span>
-                    </div>
-                </div>
-
-            </article>
-
-            <article class="recipe">
-                <h2>CHOCOLATE CHIP COOKIES</h2>
-                <div class="recipe-container">
-                    <img src="images/chocolate-chip-cookies.jpg" alt="chocolate-chip-cookies">
-                    <div class="recipe-content">
-                        <p class="description">Classic chocolate chip cookies with a chewy texture and the perfect balance of sweet and salty!</p>
-                        <span class="rating" role="img" aria-label="Rating: 5 out of 5 stars">
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                        </span>
-                    </div>
-                </div>
-            </article>
-        </section>
-   
+    </main>
 
     <footer>
         <p><a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a></p>
@@ -89,6 +51,6 @@
     </footer>
 
     
-    <script src="main.js"></script>
+   
 </body>
 </html>

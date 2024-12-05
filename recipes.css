@@ -147,7 +147,19 @@ footer .social img {
 footer .social img:hover {
     transform: scale(1.2);
 }
+.recipe__tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    gap: 5px;
+    }
 
+ .recipe__tags li {
+    border: 1px solid var(--primary-color);
+    padding: 3px 5px;
+    margin-top: 10px;
+ }   
 
 @media (min-width: 600px) {
     .recipes {
@@ -178,6 +190,7 @@ footer .social img:hover {
         width: 400px;
     }
 }
+
 
 @media (min-width: 960px) {
     body {
