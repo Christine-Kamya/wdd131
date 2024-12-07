@@ -1,98 +1,142 @@
+
+
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #EFC69B; /* Light gold background */
-    color: #473144; /* Dark text color */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
 }
 
 header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #AF1B3F; /* Red background for header */
-    position: relative; /* Set position for absolute child elements */
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-h1 {
-    font-size: 2.5em; /* Increase title size */
+header h1 {
+    font-size: 24px;
     margin: 0;
-    padding-bottom: 10px; /* Padding below title */
+    text-align: center;
 }
 
 nav {
-    position: absolute; /* Position navigation absolutely */
-    right: 0; /* Align to the right */
-    top: 20px; /* Align vertically within the header */
-}
-
-nav ul {
-    list-style: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    display: flex; /* Use flexbox for horizontal alignment */
-    gap: 20px; /* Space between links */
-}
-
-nav ul li {
-    margin: 0; /* Remove margin for list items */
+    text-align: right;
+    margin: 10px 20px;
 }
 
 nav a {
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* White text color */
-    font-size: 1.2em; /* Increase font size for links */
+    text-decoration: none;
+    color: #333;
+    margin-left: 15px;
+    font-size: 14px;
 }
 
 nav a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
-.skiptocontent {
-    position: absolute; /* Set to absolute positioning */
-    top: -40px; /* Move it off-screen */
-    left: 0; /* Align to the left edge of the screen */
-    background-color: #AF1B3F; /* Red background for visibility */
-    color: white; /* White text color for contrast */
-    padding: 10px; /* Add some padding */
-    z-index: 1000; /* Ensure it appears above other elements */
-    transition: top 0.3s; /* Smooth transition */
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
-.skiptocontent a {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
+.left-column,
+.right-column {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
 }
 
-.skiptocontent a:focus {
-    top: 0; /* Move back on-screen when focused */
+.main-column {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
 }
 
-main {
-    display: grid; /* Use grid for the main content */
-    grid-template-columns: 3fr 1fr; /* Main content on the left, filter box on the right */
-    padding: 20px; /* Add padding */
+.book {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.articles {
-    display: grid; /* Use grid for articles */
-    grid-gap: 20px; /* Space between articles */
+.book-meta {
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-align: left;
+    line-height: 1.6;
 }
 
-article {
-    display: grid; /* Use grid for article layout */
-    grid-template-columns: 2fr 1fr; /* Details on the left, title, image, and description on the right */
-    background-color: #FFFFFF; /* White background for articles */
-    border: 1px solid #473144; /* Dark border for articles */
-    border-radius: 8px; /* Rounded corners */
-    padding: 10px; /* Padding inside articles */
+.book-content {
+    display: flex;
+    gap: 20px;
+    flex-direction: row; 
+    align-items: flex-start; 
 }
 
-.article-details {
-    padding-right: 10px; /* Space between details and description */
+.book img {
+    width: 120px;
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-title {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #AF1B3F;
+}
+
+.book-meta {
+    font-size: 0.85rem;
+    color: #473144;
+    margin: 10px 0;
+}
+
+.book-description {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.book-description a {
+    color: #af1b3f;
+    text-decoration: none;
+}
+
+.book-description a:hover {
+    text-decoration: underline;
+}
+
+.filters {
+    font-size: 14px;
+}
+
+.filters label {
+    display: block;
+    margin-top: 10px;
+}
+
+.filters select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #AF1B3F; /* Red background for footer */
-    color: white; /* White text color for footer */
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
 }
